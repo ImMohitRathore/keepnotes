@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+.head{
+background-color: #eed82e;
+top: -27px;
+padding-top: 30px;
+position: relative;
+font-size: 20px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+footer{
+  position: fixed;
+  bottom: -10px;
+  left: 40%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main-note{
+
+
+height: 150px;
+width: 500px;
+position: relative;
+left: 280px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 25px
+}
+
+form input{
+  max-width: 500px;
+  outline: none;
+  margin-left: 20px;
+  border: none;
+  font-size: 29px;
+  border-radius: 25px;
+  
+}
+
+form textarea{
+  width: 498px;
+  height: 150px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.main-note button{
+  position: absolute;
+  left: 465px;
+
+  bottom: -20px;
+  color: rgb(235, 220, 84);
+  border: none;
+  outline: none;
+  font-size: 50px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.note{
+ border-radius: 15px;
+  height: 120px;
+  width: 240px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.note p{
+  position: relative;
+  bottom: 40px;
+}
+.note button{
+  position: relative;
+  bottom: 70px;
+  border-radius: 50%;
+  left: 175px;
+  font-size: 15px;
+  height: 45px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: rgb(235, 177, 84);
+  background-color: white;
+
+  
+  width: 45px;
+}
+
+
+@media  only  screen and (max-width:480px){
+  
+  .head{
+  font-size: 12px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .main-note{
+   
+   left: 15px;
+   height: 50px;
+   width: 250px;
+   
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  
+form textarea{
+  width: 300px;
+  height: 70px;
   }
+
+  form input{
+    width: 300px;
+    font-weight: 200;
+  font-size: 18px;  
+  margin-left: 15px;  
+   
+  }
+
+  .main-note button{
+    left: 255px;
+    margin-bottom: -17px;
+    position: absolute;
+    font-size: 30px;
+    
+  }
+
+  .note{
+    width: 150px;
+    height: 80px;
+    top: 65px;
+    position: relative;
+  }
+  .note p{
+    font-size: 13px;
+  }
+  .note h1{
+    font-size: 20px;
+
+  }
+  .note button{
+    font-size: 15px;
+    position: absolute;
+    top :35px;
+    left:  100px;
+    height: 35px;
+    width: 35px;  
+  }
+
 }
